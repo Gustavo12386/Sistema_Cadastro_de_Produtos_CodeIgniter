@@ -1,0 +1,12 @@
+CRITICAL - 2024-02-11 02:08:58 --> CodeIgniter\Router\Exceptions\RouterException: The route for "produtos.cadastrar" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 489.
+ 1 SYSTEMPATH\Helpers\url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('produtos.cadastrar')
+ 2 APPPATH\Views\produtos\listar.php(4): url_to('produtos.cadastrar')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\web.local\\app\\Views\\produtos\\listar.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('produtos/listar', [], true)
+ 6 APPPATH\Controllers\Produtos.php(19): view('produtos/listar', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Produtos->listar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
